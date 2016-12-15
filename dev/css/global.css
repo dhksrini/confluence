@@ -1,0 +1,308 @@
+/*-----------------------------
+    Author info:
+    Company     : Inkoiniq UI Team,
+    Written by  : Srinivasan,
+    Started     : 12th Dec 2016,
+    Compiler    : Gulp-sass
+-------------------------------*/
+/*============reset css ================*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+a,
+a:active,
+a:focus {
+  outline: none; }
+
+a:hover,
+a:focus {
+  text-decoration: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*:focus {
+  outline: none; }
+
+/*============Imports ================*/
+.text-white {
+  color: #ffffff !important; }
+
+.text-black {
+  color: #000 !important; }
+
+.text-orange {
+  color: #8f0a31 !important; }
+
+.text-bold {
+  font-weight: bold !important; }
+
+.text-uppercase {
+  text-transform: uppercase !important; }
+
+.text-italic {
+  font-style: italic; }
+
+.text-light {
+  font-weight: lighter !important; }
+
+.text-violet {
+  color: #3d1270 !important; }
+
+.orange-bg {
+  background-color: #8f0a31; }
+
+.violet-bg {
+  background-color: #3d1270; }
+
+.overlay-orange {
+  background: url(../images/overlay-orange.png) repeat scroll; }
+
+.margin-top-45 {
+  margin-top: 45px; }
+
+.margin-bottom-45 {
+  margin-bottom: 45px; }
+
+.margin-top-20 {
+  margin-top: 20px; }
+
+.margin-bottom-20 {
+  margin-bottom: 20px; }
+
+.divider {
+  border-top: 1px solid #fff;
+  opacity: 0.5; }
+
+.btn-normal {
+  background-color: #ffffff;
+  color: #8f0a31;
+  padding: 8px  35px;
+  border: 0px; }
+  .btn-normal:hover, .btn-normal:focus {
+    color: #8f0a31; }
+  .btn-normal.nobg {
+    background-color: transparent;
+    border: 1px solid #e03807; }
+
+input[type="submit"].btn-normal {
+  background-color: #ffffff !important;
+  color: #8f0a31 !important;
+  padding: 8px 35px !important;
+  border: 0px !important;
+  text-transform: uppercase;
+  width: auto;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 30px;
+  height: auto; }
+
+.cover_full {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* declare heading fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+h1 {
+  font-size: 3.438em; }
+
+h2 {
+  font-size: 2.188em; }
+
+h3 {
+  font-size: 1.563em; }
+
+h4 {
+  font-size: 1.375em; }
+
+h5 {
+  font-size: 1.125em; }
+
+h6 {
+  font-size: 0.875em; }
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.875em; }
+  h2 {
+    font-size: 1.563em; }
+  h3 {
+    font-size: 1.250em; }
+  h5 {
+    font-size: 0.938em; }
+  h6 {
+    font-size: 0.875em; } }
+
+@media only screen and (max-width: 568px) {
+  .col-xss-12 {
+    width: 100%;
+    float: none;
+    margin-top: 15px; } }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  line-height: 1.3;
+  padding: 0 !important;
+  overflow-x: hidden;
+  color: #15032a; }
+
+select::-ms-expand {
+  display: none; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+input[type="number"] {
+  -moz-appearance: none !important;
+  -moz-appearance: textfield !important; }
+
+a {
+  outline: none; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition-delay: 9999s;
+  -webkit-transition: color 9999s ease-out,  background-color 9999s ease-out; }
+
+select,
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* =================
+    Header Styles
+===================*/

@@ -1,0 +1,23 @@
+{
+  "name": "confluence",
+  "version": "1.0.0",
+  "description": "confluence pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Srinivasan",
+  "license": "ISC",
+  "directory" : "dev/vendor",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.2.0"
+  },
+  "dependencies": {
+    "bower": "^1.7.9"
+  },
+  "keywords": [
+    "talent",
+    "edge"
+  ]
+}

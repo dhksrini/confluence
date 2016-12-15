@@ -1,0 +1,13 @@
+{
+  "short_name": "Confluence",
+  "name": "Online Certification & Distance Degree Courses",
+  "icons": [{
+    "src": "images/favicon.png",
+    "sizes": "96x96",
+    "type": "image/png"
+  }],
+  "start_url": "index.html",
+  "display": "standalone",
+  "lang": "en-US",
+  "orientation": "portrait"
+}

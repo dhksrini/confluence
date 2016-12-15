@@ -1,0 +1,110 @@
+@import './colors';
+
+@mixin transition($transition) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    -ms-transition: $transition;
+    transition: $transition;
+}
+
+@mixin border-radius($radius) {
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin opacity($opacity) {
+    -moz-opacity: $opacity;
+    -o-opacity: $opacity;
+    -webkit-opacity: $opacity;
+    -ms-opacity: $opacity;
+    opacity: $opacity;
+}
+
+@mixin transform($translateY) {
+    -webkit-transform: $translateY;
+    -ms-transform: $translateY;
+    -o-transform: $translateY;
+    transform: $translateY;
+}
+
+@mixin boxShadow($shadow) {
+    box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+}
+
+
+@mixin checkBox {
+    label {
+        position: relative;
+        padding-left: 29px;
+        color: #363636;
+        cursor: pointer;
+        &:after,
+        &:before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: inline-block;
+            @include transition(0.25s ease-in-out);
+        }
+        &:after {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background: #fff;
+            border: 1px solid #969696;
+            @include transition(300ms linear);
+        }
+        &:before {
+            display: none !important;
+            content: "\e929";
+            color: #fff;
+            display: inline-block;
+            font-size: 14px;
+            font-family: 'icomoon' !important;
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            z-index: 2;
+            top: 2px;
+            left: 2px;
+        }
+    }
+    input[type="checkbox"] {
+        margin-top: 0px;
+        display: none;
+        & + label {
+            &:hover {
+                &:after {
+                    border-color: #2FAEF8;
+                }
+            }
+        }
+        &:checked {
+            + label {
+                &:hover {
+                }
+                &:after {
+                    background-color: #2FAEF8;
+                    border-color: #2FAEF8;
+                    @include transition(300ms linear);
+                }
+                &:before {
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
